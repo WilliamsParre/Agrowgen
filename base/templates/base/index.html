@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Index{% endblock %}
+{% block content%}
+<div>
+    <div id="carouselExampleControls" class="carousel slide w-100 d-none d-lg-block d-sm-none"
+        style="height:90.3vh; overflow: hidden;" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video class="d-block w-100" autoplay loop muted>
+                    <source src="{% static 'videos/inspection.mp4' %}" type="video/mp4" />
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100" autoplay loop muted>
+                    <source src="{% static 'videos/farmInspection.mp4' %}" type="video/mp4" />
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100" autoplay loop muted>
+                    <source src="{% static 'videos/farmInspection.mp4' %}" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+{% endblock %}
